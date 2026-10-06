@@ -1,0 +1,155 @@
+:root {
+  color-scheme: light;
+  --body-bg: #f8f9fa;
+  --body-color: #212529;
+  --card-bg: #ffffff;
+  --card-border: #e9ecef;
+  --text-muted-color: #6c757d;
+  --card-hover-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  --link-color: #0d6efd;
+}
+
+body.dark-mode {
+  color-scheme: dark;
+  --body-bg: #121212;
+  --body-color: #f8f9fa;
+  --card-bg: #1e1e1e;
+  --card-border: #2d2d2d;
+  --text-muted-color: #a0a0a0;
+  --card-hover-shadow: 0 12px 24px rgba(0, 0, 0, 0.45);
+  --link-color: #6ea8fe;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Fixes anchor jump positioning so sticky navbar doesn't cover content */
+section[id],
+div[id] {
+  scroll-margin-top: 90px;
+}
+
+/* Card & Navigation Theming */
+.card,
+.navbar,
+footer {
+  background-color: var(--card-bg) !important;
+  border-color: var(--card-border) !important;
+  color: inherit !important;
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.text-secondary,
+.text-muted {
+  color: var(--text-muted-color) !important;
+}
+
+/* Dynamic Links */
+a:not(.btn) {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:not(.btn):hover {
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+  color: var(--body-color);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* Logo Styling & Dynamic Switching */
+.brand-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-dark {
+  display: none;
+}
+
+.logo-light {
+  display: inline-block;
+}
+
+body.dark-mode .logo-light {
+  display: none;
+}
+
+body.dark-mode .logo-dark {
+  display: inline-block;
+}
+
+/* Profile Image Enhancement */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Buttons */
+.btn {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Toast Notification Custom Styling */
+#copyToast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1080;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 768px) {
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Desktop Hover Interactions Only */
+@media (hover: hover) and (pointer: fine) {
+  .hover-lift {
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow) !important;
+  }
+
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+
+  .profile-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: var(--link-color);
+  }
+}

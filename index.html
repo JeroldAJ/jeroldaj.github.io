@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerold Wilson - Python Full Stack Developer</title>
+
+  <!-- Favicon & Apple Touch Icons -->
+  <link rel="icon" type="image/jpeg" href="assets/dark_mode_logo.jpg">
+  <link rel="apple-touch-icon" href="assets/dark_mode_logo.jpg">
+
+  <!-- Open Graph Meta Tags for Social & Professional Sharing -->
+  <meta property="og:title" content="Jerold Wilson - Python Full Stack Developer">
+  <meta property="og:description"
+    content="Explore the portfolio of Jerold Wilson, a Python Full Stack Developer combining a quality-assurance background with modern web engineering using Django, React, and MySQL.">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-xl border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#hero">
+        <img src="assets/white_mode_logo.jpg" alt="Jerold Wilson Logo Light" class="brand-logo logo-light">
+        <img src="assets/dark_mode_logo.jpg" alt="Jerold Wilson Logo Dark" class="brand-logo logo-dark">
+        <span>Jerold Wilson</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+        aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-xl-center">
+          <li class="nav-item"><a class="nav-link px-2" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="#contact">Contact</a></li>
+          <li class="nav-item ms-xl-2 mt-2 mt-xl-0">
+            <a href="assets/JEROLD-WILSON-A.pdf" download class="btn btn-primary btn-sm">
+              <i class="bi bi-download me-1"></i> Resume
+            </a>
+          </li>
+          <li class="nav-item ms-xl-2 mt-2 mt-xl-0">
+            <button class="btn btn-outline-secondary btn-sm" id="themeBtn" aria-label="Toggle theme">
+              <i class="bi bi-moon-fill me-1"></i> Dark Mode
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div id="hero" class="container py-5">
+    <div class="row align-items-center py-4">
+      <div class="col-md-3 text-center mb-4 mb-md-0">
+        <img src="assets/Jerold.jpg" alt="Portrait of Jerold Wilson A" class="profile-img border" loading="lazy">
+      </div>
+      <div class="col-md-9 text-center text-md-start">
+        <h1 class="fw-bold display-5">Jerold Wilson A</h1>
+        <h3 class="text-primary mb-3">Python Full Stack Developer</h3>
+        <p class="lead text-secondary mb-4">
+          Detail-oriented software professional combining a meticulous quality-assurance background with modern
+          full-stack engineering. Passionate about building robust, secure applications using Python, Django, React, and
+          MySQL.
+        </p>
+        <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="#projects" class="btn btn-outline-primary">View Projects</a>
+          <a href="assets/JEROLD-WILSON-A.pdf" download class="btn btn-outline-secondary">
+            <i class="bi bi-file-earmark-arrow-down me-1"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container my-4">
+
+    <!-- About Me -->
+    <section class="card mb-4 shadow-sm hover-lift" id="about">
+      <div class="card-body p-4">
+        <h4 class="card-title fw-bold mb-3">About Me</h4>
+        <p class="card-text text-secondary lead">
+          I am an aspiring Full Stack Developer leveraging a solid foundation in QA testing and enterprise workflows to
+          craft dependable, user-centric web solutions. </p>
+        <p class="card-text text-secondary mb-0 lead">
+          Drawing from my background in structured enterprise application logic, relational SQL databases, and agile
+          execution, I bring a quality-first mindset to building clean backend architectures with Django and responsive
+          interfaces with modern JavaScript, React, and Bootstrap. </p>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="card mb-4 shadow-sm" id="projects">
+      <div class="card-body p-4">
+        <h4 class="card-title fw-bold mb-4">Featured Projects</h4>
+        <div class="row g-3">
+          <!-- Project 1 -->
+          <div class="col-md-6">
+            <div class="card h-100 border hover-lift">
+              <div class="card-body d-flex flex-column">
+                <h5 class="fw-bold">Employee Management System</h5>
+                <p class="text-secondary small flex-grow-1">
+                  A full-stack enterprise platform developed using React Vite, Python Django, and MySQL. Fully
+                  conceptualized, designed, and coded through end-to-end AI collaboration using VS Code GitHub Copilot.
+                </p>
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge bg-secondary-subtle text-primary border">React Vite</span>
+                  <span class="badge bg-secondary-subtle text-primary border">Python Django</span>
+                  <span class="badge bg-secondary-subtle text-primary border">MySQL</span>
+                  <span class="badge bg-secondary-subtle text-primary border">Fully AI-Developed (VS Code
+                    Copilot)</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/JeroldAJ" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-github me-1"></i> GitHub Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-md-6">
+            <div class="card h-100 border hover-lift">
+              <div class="card-body d-flex flex-column">
+                <h5 class="fw-bold">Uyir Thuli Donors Network</h5>
+                <p class="text-secondary small flex-grow-1">
+                  A full-stack blood donation management platform featuring donor dashboards, hospital verification
+                  workflows, and real-time SMS, email, and WhatsApp dispatch alerts to minimize emergency response
+                  latency.
+                </p>
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge bg-secondary-subtle text-primary border">React Vite</span>
+                  <span class="badge bg-secondary-subtle text-primary border">Python Django</span>
+                  <span class="badge bg-secondary-subtle text-primary border">MySQL</span>
+                  <span class="badge bg-secondary-subtle text-primary border">Live Alerts (SMS/Email/WhatsApp)</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/JeroldAJ/uyir_thuli_donors_network.git" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-github me-1"></i> GitHub Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-md-6">
+            <div class="card h-100 border hover-lift">
+              <div class="card-body d-flex flex-column">
+                <h5 class="fw-bold">Live Atmosphere Weather Dashboard</h5>
+                <p class="text-secondary small flex-grow-1">
+                  A responsive weather web application integrating real-time meteorological data via API, dynamic
+                  background adjustments, and two-way location lookup.
+                </p>
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge bg-secondary-subtle text-primary border">HTML</span>
+                  <span class="badge bg-secondary-subtle text-primary border">CSS</span>
+                  <span class="badge bg-secondary-subtle text-primary border">JavaScript</span>
+                  <span class="badge bg-secondary-subtle text-primary border">OpenWeather API</span>
+                  <span class="badge bg-secondary-subtle text-primary border">Google Maps API</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/JeroldAJ/Live_Atmosphere_Weather_Dashboard.git" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-github me-1"></i> GitHub Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="col-md-6">
+            <div class="card h-100 border hover-lift">
+              <div class="card-body d-flex flex-column">
+                <h5 class="fw-bold">Developer Portfolio Page</h5>
+                <p class="text-secondary small flex-grow-1">
+                  A responsive personal portfolio website built with native system typography, smooth
+                  micro-interactions, accessibility attributes, and dynamic light/dark mode persistence.
+                </p>
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge bg-secondary-subtle text-primary border">HTML</span>
+                  <span class="badge bg-secondary-subtle text-primary border">CSS</span>
+                  <span class="badge bg-secondary-subtle text-primary border">Bootstrap</span>
+                  <span class="badge bg-secondary-subtle text-primary border">JavaScript</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/JeroldAJ" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-github me-1"></i> GitHub Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="col-md-6">
+            <div class="card h-100 border hover-lift">
+              <div class="card-body d-flex flex-column">
+                <h5 class="fw-bold">Console Project: Student Grade Book</h5>
+                <p class="text-secondary small flex-grow-1">
+                  An object-oriented Python application engineered to securely manage student profiles, compute subject
+                  marks, calculate semester averages, and generate formal academic grades.
+                </p>
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge bg-secondary-subtle text-primary border">Python (OOP)</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/JeroldAJ/student_grade_book.git" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-github me-1"></i> GitHub Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="card mb-4 shadow-sm hover-lift" id="skills">
+      <div class="card-body p-4">
+        <h4 class="card-title fw-bold mb-3">Technical Skills</h4>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <h6 class="fw-bold">Frontend</h6>
+            <p class="text-secondary small mb-0">HTML5, CSS3, JavaScript, Bootstrap, React JS</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold">Backend &amp; Databases</h6>
+            <p class="text-secondary small mb-0">Python, Django, REST APIs, MySQL</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold">Testing Tools &amp; Frameworks</h6>
+            <p class="text-secondary small mb-0">Selenium WebDriver, Postman API</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold">Testing Management &amp; OS</h6>
+            <p class="text-secondary small mb-0">Azure DevOps, Windows</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold">Tools, Platforms &amp; Others</h6>
+            <p class="text-secondary small mb-0">Git, GitHub, VS Code, PyCharm, Tally Prime 7.0, MS Office 365</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soft Skills -->
+    <section class="card mb-4 shadow-sm hover-lift" id="soft-skills">
+      <div class="card-body p-4">
+        <h4 class="card-title fw-bold mb-3">Soft Skills</h4>
+        <ul class="text-secondary small mb-0">
+          <li class="mb-1">Collaborated effectively with cross-functional team members to achieve common project
+            targets.</li>
+          <li class="mb-1">Quickly adapted to new technical systems, architectures, and software engineering workflows.
+          </li>
+          <li class="mb-1">Maintained a structured, analytical approach to complex debugging and problem-solving.</li>
+          <li class="mb-1">Embraced constructive peer reviews and feedback to refine codebase quality.</li>
+          <li>Established strong, respectful professional relationships across corporate departments.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Working Experience -->
+    <section class="card mb-4 shadow-sm hover-lift" id="experience">
+      <div class="card-body p-4">
+        <h4 class="card-title fw-bold mb-3">Working Experience</h4>
+
+        <!-- Job 1 -->
+        <div class="mb-4 pb-3 border-bottom">
+          <div class="d-flex justify-content-between flex-wrap">
+            <h5 class="fw-bold mb-1">Junior Accountant</h5>
+            <span class="text-muted small">01/2025 &ndash; 04/2026 | Karaikudi</span>
+          </div>
+          <p class="text-primary small mb-2">Sree Kaderi Ambal Mills Pvt Ltd</p>
+          <p class="fw-bold small text-secondary mb-1">Job Roles and Responsibilities:</p>
+          <ul class="text-secondary small mb-2">
+            <li>Processed employee and worker salary payments accurately using Tally software and MS-Dos Payroll System.
+            </li>
+            <li>Created and maintained employee master data and updated salary information in Zoho Creator.</li>
+            <li>Entered store inventory items and purchase order details into Zoho Inventory for stock management.</li>
+            <li>Recorded bid entries and maintained accurate transactional data in InvoiceMart.</li>
+            <li>Filed GST bills and ensured corporate tax compliance through meticulous documentation.</li>
+            <li>Coordinated administrative procedures, including managing intern documentation and handling regular
+              correspondence inwards and outwards.</li>
+            <li>Managed and audited electric consumption records (solar, windmill, and grid bills), supporting precise
+              utility forecasting and operational billing checks.</li>
+          </ul>
+          <p class="small text-muted mb-0"><strong>Technology:</strong> Tally Edit Log 7.0, MS-Dos Payroll System,
+            Excel, Zoho Creator, Zoho Inventory, Zoho Analytics, Visual Foxbase</p>
+        </div>
+
+        <!-- Job 2 -->
+        <div>
+          <div class="d-flex justify-content-between flex-wrap">
+            <h5 class="fw-bold mb-1">QA Analyst</h5>
+            <span class="text-muted small">02/2022 &ndash; 04/2023 | Chennai</span>
+          </div>
+          <p class="text-primary small mb-2">Tata Consultancy Services (Crown Solutions)</p>
+          <p class="small mb-1 text-secondary"><strong>Application:</strong> Majesco IHGP QBE Filling &nbsp;|&nbsp;
+            <strong>Project:</strong> AON &nbsp;|&nbsp; <strong>Domain:</strong> Insurance
+          </p>
+          <p class="fw-bold small text-secondary mb-1">Project Description:</p>
+          <p class="text-secondary small mb-2">
+            Provided rigorous validation for Majesco's insurance product modules, covering policy administration,
+            underwriting pipelines, billing calculations, and claims workflows across diverse commercial property and
+            liability lines.
+          </p>
+          <p class="small text-secondary mb-1"><strong>Team Size:</strong> 8</p>
+          <p class="fw-bold small text-secondary mb-1">Job Roles and Responsibilities:</p>
+          <ul class="text-secondary small mb-2">
+            <li>Analyzed complex user stories to scope testing metrics and partition edge cases ahead of development
+              cycles.</li>
+            <li>Estimated testing efforts, mapped test plans, and structured granular execution tracks.</li>
+            <li>Participated actively in Agile ceremonies, executing rigorous test runs and logging thorough defect
+              documentation.</li>
+            <li>Collaborated in defect triage meetings to prioritize bug remediation and accelerate release pipelines.
+            </li>
+            <li>Maintained living test documentation aligned with shifting insurance compliance requirements.</li>
+            <li>Delivered clear sprint review demos to validate build readiness prior to staging deployments.</li>
+          </ul>
+          <p class="small text-muted mb-0"><strong>Technology:</strong> Majesco Insurance Product, Manual Testing, SQL
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Container -->
+    <div class="row g-4 mb-4">
+      <div class="col-md-6" id="education">
+        <section class="card shadow-sm h-100 hover-lift">
+          <div class="card-body p-4">
+            <h4 class="card-title fw-bold mb-3">Education</h4>
+            <h5 class="fw-bold mb-1">Bachelor of Computer Applications (BCA)</h5>
+            <p class="text-primary small mb-1">Pavendar Bharathidasan College of Arts and Science, Pudukkottai</p>
+            <p class="text-muted small mb-1">University/Board: Bharathidasan University</p>
+            <p class="text-muted small mb-1">Duration: 2017 &ndash; 2020</p>
+            <p class="text-muted small mb-2">Percentage/CGPA: 7.23</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-md-6" id="certifications">
+        <section class="card shadow-sm h-100 hover-lift">
+          <div class="card-body p-4">
+            <h4 class="card-title fw-bold mb-3">Certifications</h4>
+            <div>
+              <h5 class="fw-bold mb-1">AI Implemented Full Stack Python Developer Certificate</h5>
+              <p class="text-muted small mb-0">Login360 &middot; 2026</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <section class="card mb-4 shadow-sm hover-lift" id="achievements">
+      <div class="card-body p-4">
+        <h4 class="card-title fw-bold mb-3">Achievements</h4>
+        <p class="text-secondary small mb-0">
+          Successfully automated underwriting rule validations across four deployment environments (Dev, QC, Cloud QA
+          [UAT], and Cloud UAT [Stage]), achieving considerable efficiency gains for enterprise business operations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact & Social Links -->
+    <section class="card shadow-sm mb-4 hover-lift" id="contact">
+      <div class="card-body p-4">
+        <h4 class="card-title fw-bold mb-3">Contact &amp; Links</h4>
+        <p class="text-secondary mb-3">Feel free to reach out for full-stack developer openings, technical interviews,
+          or collaborations:</p>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <i class="bi bi-envelope-fill text-primary me-2"></i>
+            <strong>Email:</strong>
+            <a href="mailto:jeroldwilson2000@gmail.com" id="emailLink">jeroldwilson2000@gmail.com</a>
+            <button class="btn btn-sm btn-outline-secondary py-0 px-1 ms-2" onclick="copyEmail()"
+              title="Copy email address" aria-label="Copy email address">
+              <i class="bi bi-clipboard"></i>
+            </button>
+          </div>
+          <div class="col-md-6">
+            <i class="bi bi-telephone-fill text-primary me-2"></i>
+            <strong>Phone:</strong> <a href="tel:+916383406074">+91 6383406074</a>
+          </div>
+          <div class="col-md-6">
+            <i class="bi bi-linkedin text-primary me-2"></i>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jerold-wilson-aj/" target="_blank"
+              rel="noopener noreferrer">jerold-wilson-aj</a>
+          </div>
+          <div class="col-md-6">
+            <i class="bi bi-github text-primary me-2"></i>
+            <strong>GitHub:</strong> <a href="https://github.com/JeroldAJ" target="_blank"
+              rel="noopener noreferrer">JeroldAJ</a>
+          </div>
+          <div class="col-md-6">
+            <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+            <strong>Location:</strong> Ramanathapuram, TN (Open to Remote / Relocation)
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-top py-4 text-center text-muted small mt-auto">
+    <div class="container">
+      &copy; 2026 Jerold Wilson. Built with HTML, CSS &amp; Bootstrap.
+    </div>
+  </footer>
+
+  <!-- Toast Notification HTML -->
+  <div class="toast align-items-center text-bg-primary border-0" id="copyToast" role="alert" aria-live="assertive"
+    aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        <i class="bi bi-check-circle-fill me-1"></i> Email copied to clipboard!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+        aria-label="Close"></button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
